@@ -1,0 +1,288 @@
+/*General properties*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins',sans-serlf
+}
+
+
+
+/*Body styling*/
+body{
+    background-color:#f4f4f4;
+    color: black;
+    text-align:center;
+
+    
+}
+/*Header styling*/
+header{
+    background-color:#808000;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    padding:10px;
+    width:100%;
+}
+/*Navbar styling*/
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width:1000px;
+    margin:auto;
+    padding: 0 20px;
+}
+
+.logo{
+    color:#f4f4f4;
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+nav ul li a{
+    color:#f4f4f4;
+    text-decoration:none;
+    font-size:16px;
+}
+
+nav ul li a:hover{
+    color:#ff9800;
+}
+
+#home{
+    background:linear-gradient(120deg,#ff9800,#ff5722);
+    color: white;
+    padding: 120px 20px;
+}
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+h1{
+    font-size:2rem;
+    font-weight:200;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+.btn{
+    display: inline-block;
+    background:#222;
+    color:white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius:5px;
+    font-size:1rem;
+    margin-top:10px;
+}
+
+.btn:hover{
+         color:#ff9800;   
+}
+
+
+#about,#skills,#projects,#contact{
+    padding: 50px 20px;
+}
+
+
+h2{
+    font-size:2rem;
+    margin-bottom: 15px;
+}
+
+.skill{
+    width:80%;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom:15px;
+}
+
+.progress{
+    background:#ddd;
+    height:10px;
+    border-radius:5px;
+    overflow: hidden;
+}
+
+.progress-bar{
+    background:#ff9800;
+    height:100%;
+    transition:width 1s;
+}
+/*project*/
+.projects-container{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: centre;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:80px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.project-card{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    width:300px;
+    box-shadow:  0.5px 3px 6px;
+    transition:transform 0.3s  ease-in-out 0s;
+}
+
+
+.project-card:hover{
+    transform:translateY(-3px);
+    transform: rotate(360deg);
+    transform: scale(1.2);
+}
+
+.project-card img{
+    width:100%;
+    border-radius:5px;
+}
+
+.project-card h3{
+    margin:10px;
+}
+
+/*contact form*/
+
+form{
+     display:flex;
+    flex-direction:column;
+    width: 400px;
+    max-width:400px;
+    margin:auto;
+    text-align:center;
+}
+
+
+input,text-area{
+    padding:8px;
+    margin-bottom:10px;
+    border-radius:5px;
+    border: 2px solid #938f93;
+}
+
+
+button{
+    background:#222;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+}
+
+button:hover{
+    background:#ff9800;
+}
+
+
+footer{
+    background-color:black;
+    position:absolute;
+    padding:20px;
+    width:100%;
+    margin-top:10px;
+
+}
+
+footer p{
+    color:white;
+}
+
+.project1-pic{
+    background-color:white;
+    padding:10px;
+    border-radius:10px;
+    margin-top:75px;
+}
+
+.project2-pic{
+    background-color:white;
+    padding:10px;
+    border-radius:10px;
+    margin-top:60px;
+}
+
+.project3-pic{
+    background-color: white;
+    padding:10px;
+    border-radius:10px;
+    margin-top:60px;
+}
+
+@media (max-width:768px){
+    .menu-toggle{
+        display: block;
+    }
+    nav ul{
+        display:none;
+        flex-direction: colomn;
+        background: #222;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left:0;
+        text-align: center;
+        padding: 10 px 0;
+    }
+    nav ul.active{
+        display:flex;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+h1{
+    font-size:1.8rem;
+}
+h2{
+    font-size: 1.6 rem;
+}
+
+.profile-pic{
+    width:100px;
+    height:100px;
+}
+project-card{
+    width:90%;
+}
+}
+@media (max-width:480px){
+    h1{
+        font-size:1.6rem;
+    }
+    h2{
+        font-size:1.4rem;
+    }
+    .profile-pic{
+        width:90px;
+        height:90px;
+    
+    }
+    project-card{
+        width:100%;
+    }
+}
